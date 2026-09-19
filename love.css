@@ -1,0 +1,655 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3
+    );
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   FIRST PAGE
+========================================= */
+
+.container {
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    width: 90%;
+    max-width: 600px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.container h1 {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+
+.question {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.container h2 {
+    font-size: 28px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   FIRST BUTTONS
+========================================= */
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+button {
+    border: none;
+
+    padding: 15px 35px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+#yesBtn {
+    background-color: #ff4d6d;
+
+    color: white;
+}
+
+
+#noBtn {
+    background-color: #444;
+
+    color: white;
+}
+
+
+/* =========================================
+   BEGINNING PAGE
+========================================= */
+
+.beginning-page {
+    min-height: 100vh;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3
+    );
+
+    color: white;
+}
+
+
+.heart {
+    font-size: 80px;
+
+    animation: heartbeat 1.2s infinite;
+}
+
+
+.beginning-page h1 {
+    font-size: 42px;
+
+    margin: 20px 0;
+}
+
+
+.beginning-page p {
+    font-size: 20px;
+
+    max-width: 600px;
+
+    line-height: 1.7;
+
+    margin: 8px 0;
+}
+
+
+#storyBtn {
+    margin-top: 30px;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #ff4d6d;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#storyBtn:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================================
+   PHOTOS PAGE
+========================================= */
+
+.photos-page {
+    min-height: 100vh;
+
+    width: 100%;
+
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3
+    );
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.photo-intro {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+
+.small-heart {
+    font-size: 60px;
+
+    animation: heartbeat 1.2s infinite;
+}
+
+
+.photo-intro h1 {
+    font-size: 45px;
+
+    margin: 20px 0;
+}
+
+
+.photo-intro p {
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   PHOTO CARDS
+========================================= */
+
+.photo-card {
+    width: 90%;
+
+    max-width: 450px;
+
+    margin: 50px auto;
+
+    padding: 15px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    color: #333;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
+
+    transition: 0.4s;
+}
+
+
+.photo-card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+
+.photo-card img {
+    width: 100%;
+
+    max-height: 550px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+
+.photo-card h2 {
+    margin: 20px 0 10px;
+
+    font-size: 25px;
+}
+
+
+.photo-card p {
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    padding: 0 10px 10px;
+}
+
+
+/* =========================================
+   QUESTION BUTTON
+========================================= */
+
+#questionBtn {
+    margin: 40px 0;
+
+    padding: 17px 30px;
+
+    border: none;
+
+    border-radius: 35px;
+
+    background: white;
+
+    color: #ff4d6d;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#questionBtn:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================================
+   FINAL QUESTION PAGE
+========================================= */
+
+.proposal-page {
+    min-height: 100vh;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3
+    );
+
+    color: white;
+}
+
+
+.big-heart {
+    font-size: 90px;
+
+    animation: heartbeat 1.2s infinite;
+}
+
+
+.proposal-page h1 {
+    font-size: 40px;
+
+    margin: 20px 0;
+}
+
+
+.proposal-page p {
+    font-size: 20px;
+
+    max-width: 650px;
+
+    line-height: 1.7;
+
+    margin: 5px 0;
+}
+
+
+.proposal-page h2 {
+    font-size: 32px;
+
+    margin: 20px 0 35px;
+}
+
+
+/* =========================================
+   FINAL BUTTONS
+========================================= */
+
+.proposal-buttons {
+    display: flex;
+
+    gap: 25px;
+
+    justify-content: center;
+}
+
+
+.proposal-buttons button {
+    padding: 16px 35px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#finalYes {
+    background: white;
+
+    color: #ff4d6d;
+}
+
+
+#finalNo {
+    background: #444;
+
+    color: white;
+}
+
+
+/* =========================================
+   SUCCESS PAGE
+========================================= */
+
+.success-page {
+    min-height: 100vh;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3
+    );
+
+    color: white;
+}
+
+
+.heart-animation {
+    font-size: 100px;
+
+    animation: heartbeat 1s infinite;
+}
+
+
+.success-page h1 {
+    font-size: 45px;
+
+    margin: 20px;
+}
+
+
+.success-page p {
+    font-size: 20px;
+
+    margin: 10px;
+}
+
+
+.success-page h2 {
+    font-size: 30px;
+
+    margin: 20px;
+}
+
+
+.love-text {
+    font-size: 35px;
+
+    font-weight: bold;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   MUSIC BUTTON
+========================================= */
+
+#musicBtn {
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    font-size: 22px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+
+    transition: 0.3s;
+}
+
+
+#musicBtn:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================================
+   HEARTBEAT ANIMATION
+========================================= */
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 35px 20px;
+    }
+
+
+    .container h1 {
+        font-size: 35px;
+    }
+
+
+    .container h2 {
+        font-size: 23px;
+    }
+
+
+    .beginning-page h1 {
+        font-size: 32px;
+    }
+
+
+    .beginning-page p {
+        font-size: 17px;
+    }
+
+
+    .photo-intro h1 {
+        font-size: 35px;
+    }
+
+
+    .proposal-page h1 {
+        font-size: 32px;
+    }
+
+
+    .proposal-page h2 {
+        font-size: 25px;
+    }
+
+
+    .success-page h1 {
+        font-size: 35px;
+    }
+
+
+    .love-text {
+        font-size: 28px;
+    }
+
+
+    .proposal-buttons {
+        gap: 15px;
+    }
+
+
+    .proposal-buttons button {
+        padding: 14px 25px;
+    }
+
+}
