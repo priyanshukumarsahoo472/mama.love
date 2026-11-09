@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #081b29;
+    color: white;
+}
+
+/* Navbar */
+header {
+    background: #05131e;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.logo span,
+.heading span {
+    color: #00eeff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00eeff;
+}
+
+/* Home */
+.home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 8%;
+    gap: 30px;
+}
+
+.home-content {
+    max-width: 550px;
+}
+
+.home-content h1 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.home-content h2 {
+    color: #00eeff;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #00eeff;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: #00eeff;
+    color: #081b29;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* Common Sections */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.section p {
+    line-height: 1.8;
+}
+
+/* Skills */
+.skills-container,
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background: #102c40;
+    border: 1px solid #00eeff;
+    padding: 20px 30px;
+    border-radius: 12px;
+}
+
+/* Projects */
+.project-card {
+    background: #102c40;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #00eeff;
+}
+
+.project-card h3 {
+    color: #00eeff;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #05131e;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .profile img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
+}
+
+    </style>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Priyanshu<span>.</span></h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Priyanshu Kumar Sahoo</h1>
+            <h2>WEB Developer</h2>
+
+            <p>
+                I am a Computer Science student passionate
+                about web development and technology.
+                I love creating beautiful websites.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <div class="profile">
+            <img src="./my photo.jpeg"
+                 alt="My Profile Photo">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <p>
+            I am a first-year Computer Science student at
+            Lakshya Institute of Technology, Bhubaneswar.
+            Currently learning HTML, CSS, C and java script.
+            My goal is to become a skilled software developer.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Java script</div>
+            <div class="skill">Web Development</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Registration Form</h3>
+                <p>Created using HTML and CSS.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Student Table</h3>
+                <p>Designed a responsive table using HTML and CSS.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>My personal portfolio website.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <p>Email: priyanshukumarsahoo475@gmail.com</p>
+
+        <a href="www.linkedin.com/in/priyanshukumarsahoo2008"
+           class="btn">LinkedIn</a>
+
+        <a href="https://talent-loop-eight-xi.vercel.app/freelancer/portfolio"
+           class="btn">Talent Loop</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Priyanshu Kumar Sahoo | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
